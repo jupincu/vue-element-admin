@@ -1,6 +1,6 @@
 FROM node:11
 ENV FONT_DEV /usr/src/font-dev 
-RUN npm config set registry https://registry.npm.taobao.org
+# RUN npm config set registry https://registry.npm.taobao.org
 RUN mkdir -p ${FONT_DEV}
 ADD . ${FONT_DEV}
 RUN npm install 
